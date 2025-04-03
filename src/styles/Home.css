@@ -1,0 +1,111 @@
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.features-list li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li::before {
+  content: "✔";
+  color: #4CAF50;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+
+.phone-frame {
+  width: 300px;
+  height: 500px;
+  background-image: url("../assets/phone_frame.png"); /* Using background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  
+}
+
+.tutorial-image {
+  width: 64%;
+  height: 83%;
+  border-radius: 25px;
+}
+
+
+.app-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: linear-gradient(to right, #007d7d79, #004a4a98);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+  margin-bottom: 10px;
+}
+
+.app-text {
+  /* max-width: 50%; */
+  text-align: left;
+}
+
+.app-text h1 {
+  margin-bottom: 8px;
+}
+
+.app-text p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #007a7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.features h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.features p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+.feature-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-card {
+  width: 30%;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff8826 0%, #ff4d00 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255,255,255, 0.1);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000;
+}
