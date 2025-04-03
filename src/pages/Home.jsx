@@ -30,7 +30,7 @@ const Home = () => {
             </li>
           </ul> */}
 
-          <a href="https://drive.google.com/file/d/1wilvBgVDEBydzQl7TlKQnKMgo8Gsc6r2/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-btn">
+          <a href="https://drive.usercontent.google.com/download?id=1wilvBgVDEBydzQl7TlKQnKMgo8Gsc6r2&export=download&authuser=0&confirm=t&uuid=36cc0d63-b529-4003-9550-72ac98fc649c&at=APcmpoybynpURX68Dty_MqH8D7hV%3A1743682182016" target="_blank" rel="noopener noreferrer" className="download-btn">
             Download App
           </a>
         </div>
