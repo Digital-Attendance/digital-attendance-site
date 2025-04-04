@@ -31,12 +31,13 @@
   width: 40px;
   height: 40px;
   border-radius: 5%;
-}
+} 
 
 /* Navigation Links */
 .nav-links {
   display: flex;
   gap: 20px;
+  z-index: 100;
 }
 
 .nav-links a {
