@@ -2,36 +2,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
-  max-width: 1200px;
+  width: 80%;
   height: 70px;
   background-color: #242424;
   padding: 0 20px;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
   border-radius: 50px;
+  position: relative;
   transition: width 0.3s ease;
 }
 
-/* Ensure logo-container takes equal space */
+/* Centering the logo and text properly */
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  gap: 10px;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 5%;
 }
 
 .logo-container h1 {
   font-size: 18px;
   color: #007a7a;
   font-weight: bold;
-  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5%;
 }
 
 /* Navigation Links */
@@ -50,61 +49,60 @@
   color: #007a7a;
 }
 
-/* Fix the Menu Icon */
+/* Menu Icon */
 .menu-icon {
   display: none;
-  font-size: 24px;  /* Reduced size */
+  font-size: 26px;
   color: #fff;
   cursor: pointer;
-  padding: 5px 10px; /* Adds equal padding for balance */
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .navbar {
     width: 90%;
-    flex-direction: row; /* Keep it row-based */
-    justify-content: space-between;
-    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px 20px;
   }
 
-  /* Center Logo and Name Properly */
+  /* Keep logo & name centered */
   .logo-container {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
-  .logo {
-    width: 35px;
-    height: 35px;
-  }
-
-  .logo-container h1 {
-    font-size: 16px;
-  }
-
-  /* Show Menu Icon in Small Screens */
+  /* Adjust menu icon */
   .menu-icon {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
   }
 
-  /* Navigation Links (Initially Hidden) */
+  /* NAV LINKS: Hidden initially, opens below the navbar */
   .nav-links {
     display: none;
     flex-direction: column;
     text-align: center;
     background: #242424;
     width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
     padding: 10px 0;
     border-radius: 10px;
   }
 
+  /* Open menu */
   .nav-links.open {
     display: flex;
-    animation: fadeIn 0.3s ease-in-out;
   }
 
+  /* Full width links */
   .nav-links a {
     padding: 10px 0;
     width: 100%;
@@ -117,24 +115,16 @@
     width: 95%;
   }
 
+  .menu-icon {
+    font-size: 22px; /* Reduce icon size */
+  }
+
   .logo {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
 
   .logo-container h1 {
-    font-size: 14px;
-  }
-}
-
-/* Smooth Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    font-size: 16px; /* Adjust app name size */
   }
 }
