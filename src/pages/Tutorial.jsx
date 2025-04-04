@@ -1,22 +1,30 @@
 import "../styles/Tutorial.css";
-import React from "react";
-
+import React, { useState } from "react";
 import TutorialFaculty from "../components/TutorialFaculty";
 import TutorialStudent from "../components/TutorialStudent";
 
 const Tutorial = () => {
+  const [selectedTutorial, setSelectedTutorial] = useState("faculty");
+
   return (
     <div className="tutorial">
       <h1>How to Use</h1>
-      <div className="main">
-        <div className="container">
-          <h2>For Faculty</h2>
-          <TutorialFaculty />
-        </div>
-        <div className="container">
-          <h2>For Student</h2>
-          <TutorialStudent />
-        </div>
+
+      {/* Dropdown to Select Tutorial Type */}
+      <div className="tutorial-selector">
+        <label htmlFor="tutorialType">Select User Type:</label>
+        <select
+          id="tutorialType"
+          value={selectedTutorial}
+          onChange={(e) => setSelectedTutorial(e.target.value)}
+        >
+          <option value="faculty">Faculty</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+
+      <div className="tutorial-content">
+        {selectedTutorial === "faculty" ? <TutorialFaculty /> : <TutorialStudent />}
       </div>
     </div>
   );

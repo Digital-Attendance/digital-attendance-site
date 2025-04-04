@@ -1,9 +1,5 @@
+/* Navbar Container */
 .navbar {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px; */
-  /* background: linear-gradient(to left, #007a7a, #004d4d); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,35 +9,105 @@
   padding: 0 20px;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
   border-radius: 50px;
+  position: relative;
+  transition: width 0.3s ease;
 }
 
+/* Logo Section */
 .logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .logo-container h1 {
-  font-size: 24px;
+  font-size: 20px;
   color: #007a7a;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .logo {
   width: 50px;
   height: 50px;
   border-radius: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.navbar div a {
-  margin-left: 20px;
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
 }
 
-.navbar div a:hover {
+.nav-links a:hover {
   color: #007a7a;
+}
+
+/* Menu Button (Hidden by Default) */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  /* Adjust Navbar Width */
+  .navbar {
+    width: 80%; /* Expand width for smaller screens */
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  /* Show Menu Button */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  /* Hide Links Initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: #242424;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+
+  /* Show Links When Menu is Open */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 90%; /* Even wider on very small screens */
+  }
 }
