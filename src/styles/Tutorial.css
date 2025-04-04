@@ -11,7 +11,6 @@
   margin-bottom: 20px;
 }
 
-/* Dropdown Styling */
 .tutorial-selector {
   margin-bottom: 20px;
   text-align: center;
@@ -37,7 +36,6 @@
   justify-content: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .tutorial-content {
     flex-direction: column;
@@ -74,6 +72,8 @@
 
 /* Phone Frame Overlay */
 .frame-overlay {
+  position: absolute;
+  display: none;
   width: 100%;
   height: auto;
 }
@@ -129,17 +129,8 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .phone-frame {
-    width: 240px;
-  }
-
-  .tutorial-image {
-    left: 14%;
-    width: 84%;
-  }
-
   .tutorial-title {
-    font-size: 20px;
+    font-size: 20px; 
   }
 
   .tutorial-description {
@@ -154,15 +145,6 @@
 }
 
 @media (max-width: 480px) {
-  .phone-frame {
-    width: 200px;
-  }
-
-  .tutorial-image {
-    left: 12%;
-    width: 95%;
-  }
-
   .tutorial-title {
     font-size: 18px;
   }
