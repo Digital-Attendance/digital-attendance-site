@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 50%;
   height: 70px;
   background-color: #242424;
   padding: 0 20px;
@@ -12,12 +12,12 @@
   transition: width 0.3s ease;
 }
 
-/* Centering the logo and text properly */
+
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .logo-container h1 {
@@ -71,6 +71,7 @@
   /* Keep logo & name centered */
   .logo-container {
     display: flex;
+    /* flex-grow: 1; */
     justify-content: center;
     width: 100%;
   }

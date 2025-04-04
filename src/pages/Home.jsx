@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import appScreenshot from "../assets/tutorials/tutorial_9.jpg";
+import appScreenshot from "../assets/app.jpg";
 
 const Home = () => {
   return (
@@ -14,32 +14,16 @@ const Home = () => {
             marking.
           </p>
 
-          {/* <ul className="features-list">
-            <li>
-              📍 <strong>Location-Based</strong>: Ensures students are physically present
-              in class.
-            </li>
-            <li>
-              🛡️ <strong>Face Recognition & Liveness Detection</strong>: Eliminates proxy
-              attendance and fraud.
-            </li>
-            
-            <li>
-              ⚡ <strong>Fast & Easy</strong>: Mark attendance in seconds with a seamless
-              interface.
-            </li>
-          </ul> */}
-
           <a href="https://drive.usercontent.google.com/download?id=1wilvBgVDEBydzQl7TlKQnKMgo8Gsc6r2&export=download&authuser=0&confirm=t&uuid=36cc0d63-b529-4003-9550-72ac98fc649c&at=APcmpoybynpURX68Dty_MqH8D7hV%3A1743682182016" target="_blank" rel="noopener noreferrer" className="download-btn">
             Download App
           </a>
         </div>
 
-        <div className="phone-frame">
+        <div className="phoneframe">
           <img
             src={appScreenshot}
             alt="App Screenshot"
-            className="tutorial-image"
+            className="app-image"
           />
         </div>
       </section>
@@ -66,3 +50,4 @@ const Home = () => {
 };
 
 export default Home;
+

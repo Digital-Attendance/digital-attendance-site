@@ -55,23 +55,20 @@
   padding: 20px;
 }
 
-/* Phone Frame Container */
 .phone-frame {
-  position: relative;
-  width: 280px;
-  max-width: 100%;
+  width: 300px;
+  height: 500px;
+  background-image: url("../assets/phone_frame.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-/* Tutorial Image Inside Frame */
 .tutorial-image {
-  position: absolute;
-  left: 15.5%;
-  width: 70%;
-  height: auto;
-  max-height: 84%;
+  width: 64%;
+  height: 84%;
   border-radius: 25px;
 }
 
@@ -138,7 +135,7 @@
 
   .tutorial-image {
     left: 14%;
-    width: 72%;
+    width: 84%;
   }
 
   .tutorial-title {
@@ -163,7 +160,7 @@
 
   .tutorial-image {
     left: 12%;
-    width: 75%;
+    width: 95%;
   }
 
   .tutorial-title {
