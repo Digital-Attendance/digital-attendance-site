@@ -27,24 +27,33 @@ const Home = () => {
             Our system ensures secure, location-based, and foolproof attendance
             marking.
           </p>
-
-          <a
-            href="https://correctly-generous-hog.ngrok-free.app/download"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="download-btn"
-          >
-            Download App
-          </a>
           <div className="stats">
-            <p className="stat-item">
-              <FaDownload />
-              <strong>{downloadCount}</strong> Downloads
-            </p>
-            <p className="stat-item">
-              <FaUsers />
-              <strong>{activeUsers}</strong> Active Users
-            </p>
+            <div className="stat-num">
+              <strong>450+</strong>
+              <div className="stat-item">
+                <FaDownload />
+                Downloads
+              </div>
+            </div>
+            <div className="stat-num">
+              <strong>267+</strong>
+              <p className="stat-item">
+                <FaUsers />
+                Active Users
+              </p>
+            </div>
+          </div>
+          <div className="download-cnt">
+            {/* <p>Join the revolution in attendance tracking!</p>
+            <p>Download the app today and experience the difference.</p> */}
+            <a
+              href="https://correctly-generous-hog.ngrok-free.app/download"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-btn"
+            >
+              Download App
+            </a>
           </div>
         </div>
 
