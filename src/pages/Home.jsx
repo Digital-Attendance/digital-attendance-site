@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import appScreenshot from "../assets/app.jpg";
+import { FaDownload, FaUsers } from "react-icons/fa";
 
 const Home = () => {
+  const [downloadCount, setDownloadCount] = useState(0);
+  const [activeUsers, setActiveUsers] = useState(0);
+
+  useEffect(() => {
+    fetch("https://correctly-generous-hog.ngrok-free.app/stats")
+      .then((res) => res.json())
+      .then((data) => {
+        setDownloadCount(data.downloads);
+        setActiveUsers(data.activeUsers);
+      })
+      .catch((err) => console.error("Failed to fetch stats:", err));
+  }, []);
+
   return (
     <div className="home-container">
       <section className="app-section">
@@ -14,17 +28,28 @@ const Home = () => {
             marking.
           </p>
 
-          <a href="https://drive.usercontent.google.com/download?id=1wilvBgVDEBydzQl7TlKQnKMgo8Gsc6r2&export=download&authuser=0&confirm=t&uuid=36cc0d63-b529-4003-9550-72ac98fc649c&at=APcmpoybynpURX68Dty_MqH8D7hV%3A1743682182016" target="_blank" rel="noopener noreferrer" className="download-btn">
+          <a
+            href="https://correctly-generous-hog.ngrok-free.app/download"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-btn"
+          >
             Download App
           </a>
+          <div className="stats">
+            <p className="stat-item">
+              <FaDownload />
+              <strong>{downloadCount}</strong> Downloads
+            </p>
+            <p className="stat-item">
+              <FaUsers />
+              <strong>{activeUsers}</strong> Active Users
+            </p>
+          </div>
         </div>
 
         <div className="phoneframe">
-          <img
-            src={appScreenshot}
-            alt="App Screenshot"
-            className="app-image"
-          />
+          <img src={appScreenshot} alt="App Screenshot" className="app-image" />
         </div>
       </section>
 
@@ -37,7 +62,10 @@ const Home = () => {
           </div>
           <div className="feature-card">
             <h3>Secure</h3>
-            <p>Facial recognition and Liveness Detection ensures no proxy attendance.</p>
+            <p>
+              Facial recognition and Liveness Detection ensures no proxy
+              attendance.
+            </p>
           </div>
           <div className="feature-card">
             <h3>Easy to Use</h3>
@@ -50,4 +78,3 @@ const Home = () => {
 };
 
 export default Home;
-

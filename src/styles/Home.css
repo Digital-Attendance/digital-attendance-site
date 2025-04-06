@@ -36,18 +36,69 @@
 
 .download-btn {
   display: inline-block;
-  background: #007a7a;
+  background: #FF5F1F;
   color: white;
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
+  margin-top: 20px;
   transition: 0.3s ease-in-out;
 }
 
 .download-btn:hover {
   background: #005e5e;
 }
+
+
+
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.5rem;
+  /* background-color: #f3f4f6; */
+  /* border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
+  font-size: 1.1rem;
+  color: #fff;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.stat-item strong {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+
+.stat-item i {
+  font-size: 1.5rem;
+  color: #2563eb;
+}
+
+
+@media (max-width: 600px) {
+  
+
+  .stat-item {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+
 
 
 .phoneframe {
@@ -83,10 +134,10 @@
 
 .feature-card {
   flex: 1;
-  min-width: 250px;
+  min-width: 300px;
   max-width: 32%;
   padding: 20px;
-  background: linear-gradient(135deg, #ff8826 0%, #ff4d00 100%);
+  background: linear-gradient(270deg, #EFAA56, #B54803);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -95,14 +146,14 @@
 .feature-card h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #000;
+  color: #1E1E1E;
 }
 
 .feature-card p {
   font-size: 16px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1024px) {
   .app-section {
     flex-direction: column;
