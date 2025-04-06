@@ -29,14 +29,14 @@ const Home = () => {
           </p>
           <div className="stats">
             <div className="stat-num">
-              <strong>450+</strong>
+              <strong>{downloadCount}</strong>
               <div className="stat-item">
                 <FaDownload />
                 Downloads
               </div>
             </div>
             <div className="stat-num">
-              <strong>267+</strong>
+              <strong>{activeUsers}</strong>
               <p className="stat-item">
                 <FaUsers />
                 Active Users
