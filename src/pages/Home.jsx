@@ -8,7 +8,11 @@ const Home = () => {
   const [activeUsers, setActiveUsers] = useState(0);
 
   useEffect(() => {
-    fetch("https://correctly-generous-hog.ngrok-free.app/stats")
+    fetch("https://correctly-generous-hog.ngrok-free.app/stats", {
+      headers: {
+        'ngrok-skip-browser-warning': 'true',
+      },
+    })
       .then((res) => res.json())
       .then((data) => {
         setDownloadCount(data.downloads);
@@ -16,6 +20,7 @@ const Home = () => {
       })
       .catch((err) => console.error("Failed to fetch stats:", err));
   }, []);
+  
 
   return (
     <div className="home-container">
