@@ -57,7 +57,7 @@ const Home = () => {
               </div>
             </div>
             <div className="stat-num">
-              <strong>{activeUsers}</strong>
+              <strong>{activeUsers-4}</strong>
               <p className="stat-item">
                 <FaUsers />
                 Active Users
