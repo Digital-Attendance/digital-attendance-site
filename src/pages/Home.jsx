@@ -67,14 +67,12 @@ const Home = () => {
           <div className="download-cnt">
             {/* <p>Join the revolution in attendance tracking!</p>
             <p>Download the app today and experience the difference.</p> */}
-            <a
+            <button
               onClick={handleDownload}
-              target="_blank"
-              rel="noopener noreferrer"
               className="download-btn"
             >
               Download App
-            </a>
+            </button>
           </div>
         </div>
 
