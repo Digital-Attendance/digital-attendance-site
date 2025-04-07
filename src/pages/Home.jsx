@@ -21,6 +21,24 @@ const Home = () => {
       .catch((err) => console.error("Failed to fetch stats:", err));
   }, []);
 
+
+  const handleDownload = async () => {
+    try {
+      const res = await fetch("https://welcomed-gelding-relaxed.ngrok-free.app/download", {
+        headers: {
+          "ngrok-skip-browser-warning": "true",
+        },
+      });
+  
+      const data = await res.json();
+      window.location.href = data.apkUrl;
+    } catch (err) {
+      console.error("Download failed:", err);
+      
+    }
+  };
+  
+
   return (
     <div className="home-container">
       <section className="app-section">
@@ -50,7 +68,7 @@ const Home = () => {
             {/* <p>Join the revolution in attendance tracking!</p>
             <p>Download the app today and experience the difference.</p> */}
             <a
-              href="https://welcomed-gelding-relaxed.ngrok-free.app/download"
+              onClick={handleDownload}
               target="_blank"
               rel="noopener noreferrer"
               className="download-btn"
