@@ -21,40 +21,6 @@ const Home = () => {
       .catch((err) => console.error("Failed to fetch stats:", err));
   }, []);
 
-  const handleDownload = async () => {
-    try {
-      const response = await fetch(
-        "https://welcomed-gelding-relaxed.ngrok-free.app/download",
-        {
-          method: "GET",
-          headers: {
-            "ngrok-skip-browser-warning": "true",
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to download the APK.");
-      }
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "DigitalAttendance.apk";
-      document.body.appendChild(a);
-      a.click();
-
-      a.remove();
-      window.URL.revokeObjectURL(url);
-
-      console.log("APK downloaded successfully.");
-    } catch (error) {
-      console.error("Download error:", error);
-    }
-  };
-
   return (
     <div className="home-container">
       <section className="app-section">
@@ -83,9 +49,14 @@ const Home = () => {
           <div className="download-cnt">
             {/* <p>Join the revolution in attendance tracking!</p>
             <p>Download the app today and experience the difference.</p> */}
-            <button onClick={handleDownload} className="download-btn">
+            <a
+              href="https://welcomed-gelding-relaxed.ngrok-free.app/download"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-btn"
+            >
               Download App
-            </button>
+            </a>
           </div>
         </div>
 
