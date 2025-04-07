@@ -8,9 +8,9 @@ const Home = () => {
   const [activeUsers, setActiveUsers] = useState(0);
 
   useEffect(() => {
-    fetch("https://correctly-generous-hog.ngrok-free.app/stats", {
+    fetch("https://welcomed-gelding-relaxed.ngrok-free.app/stats", {
       headers: {
-        'ngrok-skip-browser-warning': 'true',
+        "ngrok-skip-browser-warning": "true",
       },
     })
       .then((res) => res.json())
@@ -20,7 +20,40 @@ const Home = () => {
       })
       .catch((err) => console.error("Failed to fetch stats:", err));
   }, []);
-  
+
+  const handleDownload = async () => {
+    try {
+      const response = await fetch(
+        "https://welcomed-gelding-relaxed.ngrok-free.app/download",
+        {
+          method: "GET",
+          headers: {
+            "ngrok-skip-browser-warning": "true",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to download the APK.");
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "DigitalAttendance.apk";
+      document.body.appendChild(a);
+      a.click();
+
+      a.remove();
+      window.URL.revokeObjectURL(url);
+
+      console.log("APK downloaded successfully.");
+    } catch (error) {
+      console.error("Download error:", error);
+    }
+  };
 
   return (
     <div className="home-container">
@@ -29,10 +62,7 @@ const Home = () => {
           <div className="header">
             <h1>Digital Attendance</h1>
             <p>Revolutionizing attendance tracking with smart technology.</p>
-            <p>
-              Ensures foolproof
-              attendance marking.
-            </p>
+            <p>Ensures foolproof attendance marking.</p>
           </div>
           <div className="stats">
             <div className="stat-num">
@@ -53,14 +83,9 @@ const Home = () => {
           <div className="download-cnt">
             {/* <p>Join the revolution in attendance tracking!</p>
             <p>Download the app today and experience the difference.</p> */}
-            <a
-              href="https://correctly-generous-hog.ngrok-free.app/download"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="download-btn"
-            >
+            <button onClick={handleDownload} className="download-btn">
               Download App
-            </a>
+            </button>
           </div>
         </div>
 
