@@ -65,14 +65,13 @@ const Home = () => {
             </div>
           </div>
           <div className="download-cnt">
-            {/* <p>Join the revolution in attendance tracking!</p>
-            <p>Download the app today and experience the difference.</p> */}
-            <button
+            <a
               onClick={handleDownload}
               className="download-btn"
+
             >
               Download App
-            </button>
+            </a>
           </div>
         </div>
 
