@@ -21,7 +21,7 @@ const Home = () => {
       .catch((err) => console.error("Failed to fetch stats:", err));
   }, []);
 
-
+ 
   const handleDownload = async () => {
     try {
       const res = await fetch("https://welcomed-gelding-relaxed.ngrok-free.app/download", {

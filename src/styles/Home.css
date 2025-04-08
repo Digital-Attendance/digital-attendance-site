@@ -22,7 +22,6 @@
 .app-text {
   flex: 1;
   text-align: left;
-  /* min-width: 280px; */
 }
 
 .header{
@@ -30,11 +29,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 10px;
-  margin-bottom: 20px; */
 }
 
-.app-text h1 {
+.header h1 {
   font-size: 2.5rem;
   margin-bottom: 8px;
   color: #FF5F1F;
@@ -94,7 +91,6 @@
 .stat-num strong {
   font-size: 3.5rem;
   color: #fff;
-  /* font-family: "Open Sans", sans-serif;   */
 }
 
 .stat-item {
@@ -102,14 +98,10 @@
   align-items: center;
   gap: 0.6rem;
   padding: 1rem 1.5rem;
-  /* background-color: #f3f4f6; */
-  /* border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
   font-size: 1.1rem;
   color: #fff;
   min-width: 180px;
   justify-content: center;
-  /* border: 1px solid #fff; */
 }
 
 .stat-item strong {
@@ -125,16 +117,11 @@
 
 
 @media (max-width: 600px) {
-  
-
   .stat-item {
     width: 100%;
     justify-content: flex-start;
   }
 }
-
-
-
 
 .phoneframe {
   width: 300px;
@@ -175,7 +162,6 @@
   min-width: 300px;
   max-width: 32%;
   padding: 20px;
-  /* background: linear-gradient(270deg, #EFAA56, #B54803); */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -220,6 +206,7 @@
 @media (max-width: 768px) {
   .home-container {
     padding: 30px 5%;
+    
   }
 
   .feature-items {
@@ -227,26 +214,243 @@
     align-items: center;
   }
 
-  .feature-card {
-    /* max-width: 90%; */
-  }
 }
 
 @media (max-width: 480px) {
-  /* .app-text h1 {
-    font-size: 24px;
-  } */
-
-  /* .app-text p { */
-    /* font-size: 14px; */
-  /* } */
-
+  .home-container {
+    max-width: 100%;
+  }
   .download-btn {
     font-size: 14px;
     padding: 10px 18px;
   }
 
   .phone-frame {
+    width: 180px;
+    height: 360px;
+  }
+
+  .feature-card {
+    padding: 15px;
+  }
+
+  .feature-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+}
+
+
+/* General layout */
+
+/* 
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 5%;
+  text-align: center;
+}
+
+
+.app-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 5%;
+  background: linear-gradient(to right, #007d7d79, #004a4a98);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.app-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #FF5F1F;
+  font-family: "Monoton";
+  font-weight: 800;
+}
+
+.app-text p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+
+.download-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #FF5F1F;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #005e5e;
+  color: white;
+}
+
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.stat-num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-num strong {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  justify-content: center;
+}
+
+
+.phoneframe {
+  width: 300px;
+  height: 500px;
+  background-image: url("../assets/phone_frame.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.app-image {
+  width: 64%;
+  height: 84%;
+  border-radius: 25px;
+  box-shadow: 10px 5px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+.features h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.feature-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature-card {
+  flex: 1 1 280px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.feature-card-1 {
+  background: linear-gradient(-90deg, #EFAF56, #B54803);
+}
+.feature-card-2 {
+  background: #EFAF56;
+}
+.feature-card-3 {
+  background: linear-gradient(-270deg, #EFAF56, #B54803);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #1E1E1E;
+}
+
+.feature-card p {
+  font-size: 16px;
+}
+
+
+@media (max-width: 1024px) {
+  .app-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-text {
+    text-align: center;
+  }
+
+  .phoneframe {
+    width: 250px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px 5%;
+  }
+
+  .feature-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .phoneframe {
     width: 200px;
     height: 400px;
   }
@@ -262,4 +466,4 @@
   .feature-card p {
     font-size: 14px;
   }
-}
+} */
