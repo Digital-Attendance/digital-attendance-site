@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faWhatsapp,
+  faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
@@ -44,11 +44,11 @@ const About = () => {
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <a
-                href="https://wa.me/+91xxxxxxxxxx"
+                href="https://t.me/digital_attendance"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FontAwesomeIcon icon={faTelegram} />
               </a>
             </div>
           </div>
