@@ -34,7 +34,7 @@
   border-radius: 5%;
 } 
 
-/* Navigation Links */
+
 .nav-links {
   display: flex;
   gap: 20px;
@@ -51,7 +51,7 @@
   color: #007a7a;
 }
 
-/* Menu Icon */
+
 .menu-icon {
   display: none;
   font-size: 26px;
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 
-/* RESPONSIVE DESIGN */
+
 @media (max-width: 768px) {
   .navbar {
     width: 90%;
@@ -69,7 +69,7 @@
     padding: 15px 20px;
   }
 
-  /* Keep logo & name centered */
+  
   .logo-container {
     display: flex;
     /* flex-grow: 1; */
@@ -77,7 +77,7 @@
     width: 100%;
   }
 
-  /* Adjust menu icon */
+  
   .menu-icon {
     display: block;
     position: absolute;
@@ -86,7 +86,7 @@
     font-size: 24px;
   }
 
-  /* NAV LINKS: Hidden initially, opens below the navbar */
+  
   .nav-links {
     display: none;
     flex-direction: column;
@@ -100,12 +100,13 @@
     border-radius: 10px;
   }
 
-  /* Open menu */
+  
   .nav-links.open {
     display: flex;
+    box-shadow: 0px 5px 5px 0px rgba(255,255,255,0.2);
   }
 
-  /* Full width links */
+  
   .nav-links a {
     padding: 10px 0;
     width: 100%;
@@ -119,7 +120,7 @@
   }
 
   .menu-icon {
-    font-size: 22px; /* Reduce icon size */
+    font-size: 22px;
   }
 
   .logo {
@@ -128,6 +129,6 @@
   }
 
   .logo-container h1 {
-    font-size: 16px; /* Adjust app name size */
+    font-size: 16px;
   }
 }
