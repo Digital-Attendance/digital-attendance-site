@@ -1,6 +1,6 @@
 import "../styles/About.css";
 import React from "react";
-import profilePic from "../assets/profile_bg.png";
+import profilePic from "../assets/profilephoto_bg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -17,7 +17,7 @@ const About = () => {
           <p className="intro-text">
             I'M <span className="highlight-name">Piyush Kumar</span>
           </p>
-          <p className="subtitle">Full Stack Developer & App Developer</p>
+          <p className="subtitle">Developer</p>
           <button className="contact-btn">Contact Me</button>
         </div>
 
@@ -58,16 +58,16 @@ const About = () => {
       <div className="bottom-about">
         <h2>About</h2>
         <p>
-          A passionate software developer with expertise in full-stack
-          development and mobile app development. Driven by problem-solving and
-          innovation, I have developed this system to{" "}
-          <strong>simplify attendance tracking </strong>
-          using modern technologies. I am{" "}
+          A passionate software developer with a strong foundation in full-stack
+          and mobile app development, specializing in IoT and machine learning.
+          I developed this system to{" "}
+          <span className="highlight">simplify attendance tracking</span>{" "}
+          through geotagging and facial recognition. Known for being{" "}
           <span className="highlight">
             trustworthy, creative, and an effective communicator
           </span>
-          . I fondly anticipate working in a challenging yet rewarding
-          organization to attain its visions for personal growth.
+          , I aim to contribute meaningfully to innovative and impact-driven
+          organizations.
         </p>
       </div>
     </div>
