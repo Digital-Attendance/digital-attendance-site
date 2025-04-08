@@ -123,9 +123,12 @@
 
 .bottom-about h2 {
   color: #fff;
-  font-size: 28px;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   position: relative;
+}
+.bottom-about p{
+  font-size: 1rem;
 }
 
 .bottom-about h2::after {
