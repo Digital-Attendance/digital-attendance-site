@@ -75,11 +75,10 @@
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: 600;
   align-items: start;
   justify-content: center;
 }
+
 
 .stat-num{
   display: flex;
@@ -88,32 +87,22 @@
   justify-content: center;
 }
 
-.stat-num strong {
-  font-size: 3.5rem;
-  color: #fff;
-}
-
 .stat-item {
   display: flex;
   align-items: center;
   gap: 0.6rem;
   padding: 1rem 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
-  min-width: 180px;
   justify-content: center;
 }
 
-.stat-item strong {
-  font-size: 1.6rem;
+.stat-num strong {
+  font-size: 3.5rem;
   color: #fff;
 }
 
 
-.stat-item i {
-  font-size: 1.5rem;
-  color: #2563eb;
-}
 
 
 @media (max-width: 600px) {
@@ -206,15 +195,9 @@
 @media (max-width: 768px) {
   .home-container {
     padding: 30px 5%;
-    
   }
+  
 
-  .header h1 {
-    font-size: 2rem;
-  }
-  .header p {
-    font-size: 0.9rem;
-  }
 
   .feature-items {
     flex-direction: column;
@@ -225,7 +208,15 @@
 
 @media (max-width: 480px) {
   .home-container {
-    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .stat-num strong {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  .stat-item {
+    font-size: 0.8rem;
   }
   .download-btn {
     font-size: 14px;

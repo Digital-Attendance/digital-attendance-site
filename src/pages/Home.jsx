@@ -51,10 +51,10 @@ const Home = () => {
           <div className="stats">
             <div className="stat-num">
               <strong>{downloadCount}</strong>
-              <div className="stat-item">
+              <p className="stat-item">
                 <FaDownload />
                 Downloads
-              </div>
+              </p>
             </div>
             <div className="stat-num">
               <strong>{activeUsers-4}</strong>
