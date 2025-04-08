@@ -73,10 +73,11 @@
 
 .stats {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   margin-top: 1.5rem;
   align-items: start;
   justify-content: center;
+  /* border : 2px solid #FF5F1F; */
 }
 
 
