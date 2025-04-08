@@ -44,7 +44,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <a
-                href="https://wa.me/6200103558"
+                href="https://wa.me/+91xxxxxxxxxx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
