@@ -73,7 +73,7 @@ const Home = () => {
               Download App
             </a>
           </div>
-          <div><p>Download App again and update it.</p></div>
+          <div className="header"><p>Download App again and update it.</p></div>
         </div>
 
         <div className="phoneframe">
