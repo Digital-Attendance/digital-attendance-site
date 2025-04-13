@@ -58,7 +58,11 @@
   color: #fff;
   cursor: pointer;
 }
-
+@media (max-width: 1140px){
+  .navbar{
+    width: 90%;
+  }
+}
 
 @media (max-width: 768px) {
   .navbar {

@@ -20,7 +20,8 @@ const Navbar = () => {
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/tutorial" onClick={() => setMenuOpen(false)}>Tutorial</Link>
-        <Link to="/apis" onClick={() => setMenuOpen(false)}>APIs</Link>
+        {/* <Link to="/apis" onClick={() => setMenuOpen(false)}>APIs</Link> */}
+        <Link to="/gettingstarted" onClick={() => setMenuOpen(false)}>Getting Started</Link>
         {/* <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link> */}
       </div>
     </nav>

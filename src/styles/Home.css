@@ -114,23 +114,29 @@
 }
 
 .phoneframe {
-  width: 300px;
-  height: 500px;
-  background-image: url("../assets/phone_frame.png");
+  width: 280px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border : 2px solid #FF5F1F; */
+
+  /* background-image: url("../assets/phone_frame.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
+  border-radius: 50px; 
   align-items: center;
-  border-radius: 50px;
-  
+  border: 2px solid #FF5F1F; */
 }
 
 .app-image {
-  width: 64%;
-  height: 84%;
-  border-radius: 25px;
-  box-shadow: 10px 5px 20px rgba(255, 255, 255, 0.5);
+  width: 70%;
+  height: 90%;
+  border-radius: 30px;
+  box-shadow: 10px 5px 30px rgba(255, 255, 255, 0.5);
+  /* height: 84%; */
+  /* border-radius: 25px;*/
+  
 }
 
 

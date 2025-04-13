@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
-import appScreenshot from "../assets/app.jpg";
+import appScreenshot from "../assets/mainPage-2.png";
 import { FaDownload, FaUsers } from "react-icons/fa";
 
 const Home = () => {
