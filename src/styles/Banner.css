@@ -15,17 +15,12 @@ display: flex;
 }
 
 .banner-title {
-    text-align: center;
+  text-align: center;
   font-size: 80px;
   font-family: "Monoton", sans-serif;
   color: #eb5939;
 }
 
-@media (max-width: 768px) {
-  .banner-title {
-    font-size: 50px;
-  }
-}
 
 .banner-subtitle {
   color: #ffffff;
@@ -65,4 +60,22 @@ display: flex;
 
 .search-button:hover {
   background-color: #d14f33;
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 30px;
+  }
+  .banner-subtitle {
+    font-size: 16px;    
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 24px;
+  }
+  .banner-subtitle {
+    font-size: 14px;    
+  }
 }
