@@ -7,8 +7,9 @@ import About from "./pages/About";
 import GettingStarted from "./pages/GettingStarted";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import './App.css'
 import AttendanceFlow from "./pages/AttendanceFlow";
+import ToolsTechs from "./pages/ToolsTechs";
+import './App.css'
 const App = () => {
   return (
     <>
@@ -18,9 +19,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/tutorial" element={<Tutorial />} />
         <Route path="/apis" element={<API/>} />
-        <Route path="/gettingstarted" element={<GettingStarted />} />
+        <Route path="/docs" element={<GettingStarted />} />
         <Route path="/about" element={<About />} />
         <Route path="/flow" element={<AttendanceFlow />} />
+        <Route path="/tools" element={<ToolsTechs />} />
+        
       </Routes>
       <Footer />
     </>

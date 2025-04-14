@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/InfoCards.css";
 
 import { Link } from "react-router-dom";
-import faceGif from "../assets/face.gif"
+import faceGif from "../assets/facescan.gif"
 import tutorialGif from "../assets/tutorial.gif";
 
 

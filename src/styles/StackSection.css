@@ -3,7 +3,7 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 .stack-section{
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .fig {
@@ -85,7 +85,7 @@
 
 
 .main-section {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   border-radius: 50px;
   align-items: center;
@@ -107,7 +107,7 @@
   font-family: "Montserrat", sans-serif; 
 }
 
-.button {
+.stacksection-button {
   margin-top: 10px;
   color: white;
   border-radius: 45px;
@@ -150,10 +150,12 @@
 }
 
 .info-1-content{
+  justify-content: center;
   align-items: flex-start;
+  
 }
 .info-2-content {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -203,19 +205,20 @@
   }
 
   .info-1 {
-    background: linear-gradient(45deg, #EB5939, transparent);
+    background: linear-gradient(45deg, #EB5939, #FFFFFFAA);
     color: white;
   }
   .info-2 {
-    background: linear-gradient(-45deg, #004d4d, transparent);
+    background: linear-gradient(-45deg, #004d4d, #FFFFFFAA);
     color: white;
   }
 
   .content {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     padding: 20px 10px;
     text-align: center;
+    /* border : 2px solid #851DE0; */
   }
 
   .typo {
@@ -252,16 +255,31 @@
     gap: 8px;
   }
 
-  .button {
+  .stacksection-button {
     font-size: 14px;
     padding: 8px 16px;
   }
 
   .info-1-typo,
   .info-2-typo {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.8rem;
   }
+  .info{
+    flex-direction: row;
+  }
+  .info-2{
+    flex-direction: row-reverse;
+  }
+
+  .flow-animation,
+  .techs-animation{
+    width: 150px;
+    height: 150px;
+  }
+  /* .info-1-content{
+    align-items: flex-start;
+  } */
 }
 @media screen and (max-width: 480px) {
   .typo {
@@ -285,7 +303,7 @@
     max-width: 70%;
   }
 
-  .button {
+  .stacksection-button {
     font-size: 12px;
     padding: 6px 12px;
   }
@@ -297,6 +315,7 @@
 
   .content {
     padding: 10px;
+    /* border: 2px solid #851DE0; */
   }
 
   .main-section {

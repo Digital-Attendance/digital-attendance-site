@@ -1,0 +1,169 @@
+/* Overall Container */
+.doc-page-container {
+  display: flex;
+  padding: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 2%;
+  border-radius: 8px;
+}
+
+/* Table of Contents Container */
+.toc-container {
+  width: 25%;
+  padding-right: 30px;
+  border-right: 1px solid #ddd;
+}
+
+/* Toggle Button for Mobile */
+.toc-toggle {
+  display: none;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Table of Contents (Left Panel) */
+.toc {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.toc.visible {
+  max-height: 500px; /* adjust as needed */
+  opacity: 1;
+}
+
+/* Default hidden state on small screens */
+@media (max-width: 768px) {
+  .toc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .toc-toggle {
+    display: block;
+  }
+}
+
+/* Table of Contents content styling */
+.toc h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: 18px;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.toc a:hover,
+.toc a.active {
+  color: #2980b9;
+  font-weight: 600;
+}
+
+/* Main Content (Right Panel) */
+.doc-content {
+  width: 75%;
+  padding-left: 40px;
+}
+
+/* Section Card Styles */
+.element {
+  margin-bottom: 60px;
+}
+
+.section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+/* Header for Each Section */
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Section Body Text */
+.section-body p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 16px;
+}
+.section-body strong {
+  color: #007a7a;
+  font-weight: bold;
+}
+.section-body em{
+  color: #555;
+  font-style: italic;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .doc-page-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .toc-container,
+  .doc-content {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .doc-content {
+    padding-top: 10px;
+  }
+  /* Adjust card sizes for mobile */
+  .section {
+    padding: 20px;
+  }
+  .section-header h2 {
+    font-size: 22px;
+  }
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .section-body p {
+    font-size: 15px;
+  }
+}

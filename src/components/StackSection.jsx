@@ -9,6 +9,8 @@ import {
   faLinkedin,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import flow from "../assets/flowAnimation.gif";
+import techs from "../assets/techs.gif";
 
 const StackSection = () => {
   return (
@@ -75,16 +77,22 @@ const StackSection = () => {
         <div className={`content info-1-content`}>
           <h2 className={`typo info-1-typo`}>Attendance Flow</h2>
           <Link to="/flow">
-            <button className={`button info-1-button`}>Learn More</button>
+            <button className={`stacksection-button info-1-button`}>Learn More</button>
           </Link>
+        </div>
+        <div className="animation">
+          <img src={flow} alt="flow" className="flow-animation" />
         </div>
       </div>
       <div className={`main-section info info-2`}>
         <div className={`content info-2-content`}>
           <h2 className={`typo info-2-typo`}>Tools & Techs</h2>
-          <Link to="/flow">
-            <button className={`button info-2-button`}>Learn More</button>
+          <Link to="/tools">
+            <button className={`stacksection-button info-2-button`}>Learn More</button>
           </Link>
+        </div>
+        <div className="animation">
+          <img src={techs} alt="flow" className="techs-animation" />
         </div>
       </div>
     </div>

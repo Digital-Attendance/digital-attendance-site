@@ -5,7 +5,7 @@ import InfoCards from "../components/InfoCards";
 const GettingStarted = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <InfoCards />
       <StackSection />
     </>

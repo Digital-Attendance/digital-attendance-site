@@ -4,11 +4,12 @@ import TutorialFaculty from "../components/TutorialFaculty";
 import TutorialStudent from "../components/TutorialStudent";
 import { Radio, RadioGroup, FormControlLabel, FormControl, FormLabel } from "@mui/material";
 
+
 const Tutorial = () => {
   const [selectedTutorial, setSelectedTutorial] = useState("");
 
   return (
-    <div className="tutorial">
+    <div className="tutorial">      
       <h1>Learn How to Use</h1>
       <p className="tutorial-intro">
         Choose your user type below to view a step-by-step guide on using the Digital Attendance App.  

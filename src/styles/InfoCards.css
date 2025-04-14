@@ -2,17 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #007a7a;
+    border-radius: 25px;
+    width: 80%;
    }
    
    .card {
     margin: 10px;
-    /* margin-top: 10px; */
     width: 200px;
     height: 350px;
     border-radius: 20px;
-    /* padding: 1.9rem; */
     background: #f5f5f5;
     position: relative;
     display: flex;
@@ -117,8 +118,20 @@
   
   
 @media (max-width: 768px) {
+    .cards-container {
+      width: 90%;
+    }
+    .card{
+      width: 150px;
+      height: 250px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      height: 250px;
+    }
     .card-info {
       opacity: 1;
       transform: translateY(0);
     }
+
   }
