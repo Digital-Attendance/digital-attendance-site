@@ -1,4 +1,4 @@
-/* Overall Container */
+
 .doc-page-container {
   display: flex;
   padding: 40px;
@@ -9,14 +9,14 @@
   border-radius: 8px;
 }
 
-/* Table of Contents Container */
+
 .toc-container {
   width: 25%;
   padding-right: 30px;
   border-right: 1px solid #ddd;
 }
 
-/* Toggle Button for Mobile */
+
 .toc-toggle {
   display: none;
   background: #3498db;
@@ -28,16 +28,16 @@
   margin-bottom: 10px;
 }
 
-/* Table of Contents (Left Panel) */
+
 .toc {
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 .toc.visible {
-  max-height: 500px; /* adjust as needed */
+  max-height: 500px;
   opacity: 1;
 }
 
-/* Default hidden state on small screens */
+
 @media (max-width: 768px) {
   .toc {
     max-height: 0;
@@ -49,7 +49,7 @@
   }
 }
 
-/* Table of Contents content styling */
+
 .toc h2 {
   font-size: 26px;
   margin-bottom: 20px;
@@ -78,13 +78,13 @@
   font-weight: 600;
 }
 
-/* Main Content (Right Panel) */
+
 .doc-content {
   width: 75%;
   padding-left: 40px;
 }
 
-/* Section Card Styles */
+
 .element {
   margin-bottom: 60px;
 }
@@ -102,7 +102,7 @@
   transform: translateY(-2px);
 }
 
-/* Header for Each Section */
+
 .section-header {
   display: flex;
   align-items: center;
@@ -121,7 +121,7 @@
   margin: 0;
 }
 
-/* Section Body Text */
+
 .section-body p {
   font-size: 17px;
   line-height: 1.6;
@@ -137,7 +137,7 @@
   font-style: italic;
 }
 
-/* Responsive Design Adjustments */
+
 @media (max-width: 768px) {
   .doc-page-container {
     flex-direction: column;
@@ -152,7 +152,7 @@
   .doc-content {
     padding-top: 10px;
   }
-  /* Adjust card sizes for mobile */
+  
   .section {
     padding: 20px;
   }

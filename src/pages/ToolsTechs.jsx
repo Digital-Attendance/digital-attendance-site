@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import { Link, Element } from "react-scroll";
 import { motion } from "framer-motion";
 import "../styles/ToolsTechs.css";
@@ -143,16 +143,17 @@ const documentationData = [
   },
 ];
 const ToolsTechs = () => {
-  // State to toggle the Table of Contents on mobile devices
   const [isTOCVisible, setIsTOCVisible] = useState(false);
 
   const toggleTOC = () => {
     setIsTOCVisible(!isTOCVisible);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="doc-page-container">
-      {/* Collapsible Table of Contents */}
       <div className="toc-container">
         <button className="toc-toggle" onClick={toggleTOC}>
           {isTOCVisible ? "Hide TOC" : "Show TOC"}
