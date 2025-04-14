@@ -128,12 +128,12 @@
   color: #555;
   margin-bottom: 16px;
 }
-.section-body strong {
+.section-body p strong {
   color: #007a7a;
   font-weight: bold;
 }
-.section-body em{
-  color: #555;
+.section-body p em{
+  color: #d14f33;
   font-style: italic;
 }
 
