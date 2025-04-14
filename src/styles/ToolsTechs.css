@@ -142,6 +142,7 @@
   .doc-page-container {
     flex-direction: column;
     padding: 20px;
+    margin: 5%;
   }
   .toc-container,
   .doc-content {
