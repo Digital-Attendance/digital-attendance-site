@@ -21,23 +21,23 @@ const Home = () => {
       .catch((err) => console.error("Failed to fetch stats:", err));
   }, []);
 
- 
   const handleDownload = async () => {
     try {
-      const res = await fetch("https://welcomed-gelding-relaxed.ngrok-free.app/download", {
-        headers: {
-          "ngrok-skip-browser-warning": "true",
-        },
-      });
-  
+      const res = await fetch(
+        "https://welcomed-gelding-relaxed.ngrok-free.app/download",
+        {
+          headers: {
+            "ngrok-skip-browser-warning": "true",
+          },
+        }
+      );
+
       const data = await res.json();
       window.location.href = data.apkUrl;
     } catch (err) {
       console.error("Download failed:", err);
-      
     }
   };
-  
 
   return (
     <div className="home-container">
@@ -57,7 +57,7 @@ const Home = () => {
               </p>
             </div>
             <div className="stat-num">
-              <strong>{activeUsers-4}</strong>
+              <strong>{activeUsers - 4}</strong>
               <p className="stat-item">
                 <FaUsers />
                 Active Users
@@ -65,15 +65,13 @@ const Home = () => {
             </div>
           </div>
           <div className="download-cnt">
-            <a
-              onClick={handleDownload}
-              className="download-btn"
-
-            >
+            <a onClick={handleDownload} className="download-btn">
               Download App
             </a>
           </div>
-          <div className="header"><p>Download App again and update it.</p></div>
+          <div className="header">
+            <p>Download App again and update it.</p>
+          </div>
         </div>
 
         <div className="phoneframe">
