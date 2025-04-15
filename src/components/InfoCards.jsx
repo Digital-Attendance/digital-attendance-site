@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/InfoCards.css";
-
 import { Link } from "react-router-dom";
+
 import faceGif from "../assets/facescan.gif"
 import tutorialGif from "../assets/tutorial.gif";
+import "../styles/InfoCards.css";
 
 
 
@@ -38,6 +38,7 @@ const InfoCards = () => {
         description="Get started in simple steps."
         linkTo="/tutorial"
       />
+      
     </div>
   );
 };

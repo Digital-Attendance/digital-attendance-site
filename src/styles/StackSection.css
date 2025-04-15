@@ -103,7 +103,7 @@
 
 .typo {
   font-size: 3rem;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Montserrat", sans-serif; 
 }
 
@@ -118,7 +118,7 @@
 }
 
 .developers:hover {
-  background: linear-gradient(45deg, #004d4d, 1%, transparent);
+  background: linear-gradient(-45deg, #004d4d, transparent);
   color: white;
 }
 
@@ -141,11 +141,11 @@
 }
 
 .info-1:hover {
-  background: linear-gradient(45deg, #EB5939, transparent);
+  background: linear-gradient(-45deg, #EB5939, transparent);
   color: white;
 }
 .info-2:hover {
-  background: linear-gradient(-45deg, #004d4d, transparent);
+  background: linear-gradient(135deg, #004d4d, transparent);
   color: white;
 }
 
