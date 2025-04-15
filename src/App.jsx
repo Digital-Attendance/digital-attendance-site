@@ -2,7 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Tutorial from "./pages/Tutorial";
-import API from "./pages/API";
+import API_LIVENESS from "./pages/API_LIVENESS";
+import API_IDENTIFY from "./pages/API_IDENTIFY";
 import About from "./pages/About";
 import GettingStarted from "./pages/GettingStarted";
 import Navbar from "./components/Navbar";
@@ -10,6 +11,9 @@ import Footer from "./components/Footer";
 import AttendanceFlow from "./pages/AttendanceFlow";
 import ToolsTechs from "./pages/ToolsTechs";
 import './App.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import 'react-responsive-3d-carousel/dist/styles.css'; 
 const App = () => {
   return (
     <>
@@ -18,7 +22,8 @@ const App = () => {
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/tutorial" element={<Tutorial />} />
-        <Route path="/apis" element={<API/>} />
+        <Route path="/api_live" element={<API_LIVENESS/>} />
+        <Route path="/api_identify" element={<API_IDENTIFY />} />
         <Route path="/docs" element={<GettingStarted />} />
         <Route path="/about" element={<About />} />
         <Route path="/flow" element={<AttendanceFlow />} />

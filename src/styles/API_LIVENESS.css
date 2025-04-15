@@ -1,16 +1,13 @@
-/* Outer Container */
+
 .outer-container {
     display: flex;
     gap: 60px;
     width: 100%;
     margin-top: 50px;
     max-width: 1200px;
-    
-    /* Allow container to grow with content instead of forcing a fixed height */
-    /* min-height: calc(100vh - 40px); */
   }
   
-  /* Capture Container */
+  
   .capture-container {
     flex: 1;
     background: rgba(255,255,255,0.05);
@@ -30,14 +27,12 @@
     font-weight: 700;
     color: #ddd;
     margin-bottom: 20px;
-    /* text-transform: lowercase; */
     text-shadow: 0 0 10px rgba(255,255,255,0.3);
     text-align: center;
   }
   .camera-container {
     width: 100%;
     max-width: 360px;
-    /* Maintain a 3:4 aspect ratio (360x480) */
     aspect-ratio: 3 / 4;
     background: #000;
     border: 3px solid #fff;
@@ -73,7 +68,7 @@
     text-align: center;
   }
   
-  /* History Container */
+  
   .history-container {
     flex: 1;
     background: rgba(255,255,255,0.05);
@@ -94,7 +89,7 @@
     text-shadow: 0 0 10px rgba(255,255,255,0.3);
     text-align: center;
   }
-  /* The history list will expand naturally up to a max-height, then scroll */
+  
   .history-list {
     width: 100%;
     max-height: 75vh; /* Adjust as needed */
@@ -151,12 +146,12 @@
   }
   #clearHistory:hover { transform: translateY(-3px); box-shadow: 0 0 20px #fff; }
   
-  /* Custom scrollbar for history list */
+  
   .history-list::-webkit-scrollbar { width: 8px; }
   .history-list::-webkit-scrollbar-track { background: #121212; border-radius: 10px; }
   .history-list::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
   
-  /* Responsive Adjustments */
+  
   @media (max-width: 768px) {
     .outer-container {
       flex-direction: column;

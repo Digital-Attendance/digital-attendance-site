@@ -1,0 +1,31 @@
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 0 8px #fff;
+    text-align: center;
+    animation: pulse 1.2s ease-in-out;
+  }
+
+  .email-input {
+    margin-top: 20px;
+    padding: 12px;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;    
+  }
+  
+  @media (max-width: 786px) {
+    .email-input {
+      width: 90%;
+    }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.5; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.5; }
+  }
+  

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../styles/API.css";
-const API = () => {
+import "../styles/API_LIVENESS.css";
+const API_LIVENESS = () => {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [history, setHistory] = useState(
@@ -9,15 +9,25 @@ const API = () => {
   const [resultText, setResultText] = useState("");
 
   useEffect(() => {
+    let stream;
+  
     navigator.mediaDevices
       .getUserMedia({ video: true })
-      .then((stream) => {
+      .then((s) => {
+        stream = s;
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
         }
       })
       .catch((err) => console.error("Error accessing webcam:", err));
+  
+    return () => {
+      if (stream) {
+        stream.getTracks().forEach((track) => track.stop());
+      }
+    };
   }, []);
+  
 
   const captureImage = () => {
     const canvas = canvasRef.current;
@@ -109,4 +119,4 @@ const API = () => {
   );
 };
 
-export default API;
+export default API_LIVENESS;
