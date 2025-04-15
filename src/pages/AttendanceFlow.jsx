@@ -1,5 +1,5 @@
 import React from 'react';
-import flow from '../assets/APPFLOW-2.png';
+import flow from '../assets/APPFLOW-3.png';
 import '../styles/AttendanceFlow.css';
 const AttendanceFlow = () => {
   return (
