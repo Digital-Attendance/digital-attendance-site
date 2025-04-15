@@ -50,14 +50,14 @@ const Home = () => {
           </div>
           <div className="stats">
             <div className="stat-num">
-              <strong>{downloadCount}</strong>
+              <strong>{downloadCount}+</strong>
               <p className="stat-item">
                 <FaDownload />
                 Downloads
               </p>
             </div>
             <div className="stat-num">
-              <strong>{activeUsers - 4}</strong>
+              <strong>{activeUsers}+</strong>
               <p className="stat-item">
                 <FaUsers />
                 Active Users
