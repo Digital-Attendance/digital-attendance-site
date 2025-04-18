@@ -8,9 +8,10 @@ const Home = () => {
   const [activeUsers, setActiveUsers] = useState(0);
 
   useEffect(() => {
-    fetch("https://welcomed-gelding-relaxed.ngrok-free.app/stats", {
+    fetch("https://t-t7ck2bdk.tunn.dev/stats", {
+      method: "GET",
       headers: {
-        "ngrok-skip-browser-warning": "true",
+        "Content-Type": "application/json",
       },
     })
       .then((res) => res.json())
@@ -23,14 +24,12 @@ const Home = () => {
 
   const handleDownload = async () => {
     try {
-      const res = await fetch(
-        "https://welcomed-gelding-relaxed.ngrok-free.app/download",
-        {
-          headers: {
-            "ngrok-skip-browser-warning": "true",
-          },
-        }
-      );
+      const res = await fetch("https://t-t7ck2bdk.tunn.dev/download", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       const data = await res.json();
       window.location.href = data.apkUrl;
