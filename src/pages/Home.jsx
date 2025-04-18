@@ -8,7 +8,7 @@ const Home = () => {
   const [activeUsers, setActiveUsers] = useState(0);
 
   useEffect(() => {
-    fetch("https://t-t7ck2bdk.tunn.dev/stats", {
+    fetch("https://proper-boar-digital-attendance-99206d79.koyeb.app/stats", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ const Home = () => {
 
   const handleDownload = async () => {
     try {
-      const res = await fetch("https://t-t7ck2bdk.tunn.dev/download", {
+      const res = await fetch("proper-boar-digital-attendance-99206d79.koyeb.app/download", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
