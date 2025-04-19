@@ -24,12 +24,7 @@ const Home = () => {
 
   const handleDownload = async () => {
     try {
-      const res = await fetch("proper-boar-digital-attendance-99206d79.koyeb.app/download", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch("proper-boar-digital-attendance-99206d79.koyeb.app/download");
 
       const data = await res.json();
       window.location.href = data.apkUrl;
