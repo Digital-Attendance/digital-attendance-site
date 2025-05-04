@@ -25,12 +25,8 @@ const StackSection = () => {
               <img src={profile} alt="profile-1" />
             </div>
             <figcaption>
-              <h3>Developer 1</h3>
+              <h3>Piyush Kumar</h3>
               <h5>Developer</h5>
-              {/* <p>
-                Which is worse, that everyone has his price, or that the price
-                is always so low.
-              </p> */}
               <div className="icons">
                 <a
                   href="https://in.linkedin.com/in"
@@ -39,23 +35,19 @@ const StackSection = () => {
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="mailto:21_ug@ei.nits.ac.in">
+                <a href="mailto:digital.attendance.nits@gmail.com">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </div>
             </figcaption>
           </figure>
-          <figure className="fig">
+          {/* <figure className="fig">
             <div className="profile-image">
               <img src={profile} alt="profile-sample7" />
             </div>
             <figcaption>
               <h3>Developer 2</h3>
               <h5>Developer</h5>
-              {/* <p>
-                I'm killing time while I wait for life to shower me with meaning
-                and happiness.
-              </p> */}
               <div className="icons">
                 <a
                   href="https://in.linkedin.com/in"
@@ -69,7 +61,7 @@ const StackSection = () => {
                 </a>
               </div>
             </figcaption>
-          </figure>
+          </figure> */}
         </div>
 
       </div>
